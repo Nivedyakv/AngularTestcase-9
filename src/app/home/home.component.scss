@@ -1,0 +1,56 @@
+.pipe {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-family:cursive ;
+  
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      padding: 20px;
+      margin-right: 10px; 
+      margin-left: 10px; 
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      &.join {
+        width: 30%;
+      }
+  
+      &.detail, &.content {
+        width: 35%;
+      }
+  
+      h2 {
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+      }
+  
+      h3 {
+        color: rgb(255, 255, 255);
+        margin-bottom: 5px;
+      }
+  
+      p {
+        margin: 0;
+      }
+    }
+  
+    .join {
+      background-color: rgb(135, 235, 158);
+    }
+  
+    .detail {
+      background-color: lightblue;
+    }
+  
+    .content {
+      background-color: rgb(255, 175, 246);
+    }
+  }
+  

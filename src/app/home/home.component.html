@@ -1,0 +1,36 @@
+<div class="pipe">
+    <div class="card join">
+      <h2>Student joining date</h2>
+      <p>Today is {{ today | date:'shortDate' }}</p>
+      <p>Long Date Format: {{ today | date:'long' }}</p>
+      <p>Short Time Format: {{ today | date:'shortTime' }}</p>
+    </div>
+    
+    <div class="card detail">
+      <h2>Student Detail</h2>
+      <h3>Student Name in Uppercase:</h3>
+      <p>{{ 'Nivedya kv' | uppercase }}</p>
+  
+      <h3>Student Name in Lowercase:</h3>
+      <p>{{ 'NIVEDya kv' | lowercase }}</p>
+  
+      <h3>Student Tuition Fee (CurrencyPipe):</h3>
+      <p>{{ price | currency:'USD':'symbol':'1.2-2' }}</p>
+  
+      <h3>Details of Student (JSON):</h3>
+      <p>{{ object | json }}</p>
+    </div>
+    
+    <div class="card content">
+      <h2>Other Examples</h2>
+      <h3>DecimalPipe Example:</h3>
+      <p>{{ pi | number:'1.4-4' }}</p>
+  
+      <h3>Total Percentage Btech  (PercentPipe):</h3>
+      <p>{{ ratio | percent:'1.2-2' }}</p>
+  
+      <h3>SlicePipe Example:</h3>
+      <p>{{ text | slice:0:10 }}</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+    thead {
+      background-color: #007bff; /* Header background color */
+      color: #fff; /* Header text color */
+      
+      th {
+        padding: 10px;
+      }
+    }
+    
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background-color: #f8f9fa; /* Alternate row background color */
+        }
+        
+        &:hover {
+          background-color: #cce5ff; /* Hovered row background color */
+          transition: background-color 0.3s ease; /* Smooth transition effect */
+        }
+        
+        td {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  
